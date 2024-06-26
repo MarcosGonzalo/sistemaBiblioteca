@@ -1,8 +1,22 @@
-<div class="flex justify-center items-center w-full h-screen ">
-    <form class="flex flex-col items-center gap-3 w-[350px]  rounded-2xl p-10 shadow-mio ">
+<div id="contenido" class="flex justify-center items-center w-full h-screen ">
+    <form class="relative flex flex-col items-center gap-3 w-[350px]  rounded-2xl p-10 shadow-mio ">
         <p class="font-bold text-2xl">Inicia Sesión</p>
         <input class="w-full outline-none rounded-xl p-2 text-slate-700" type="text" placeholder="username o email...">
         <input class="w-full outline-none rounded-xl p-2 text-slate-700" type="text" placeholder="password">
-        <input class="mt-5 p-2 px-6 rounded-xl font-bold transition-colors bg-stone-700 hover:bg-stone-900" type="submit" value="Login">
+        <div class="flex gap-2 w-full ">
+            <input class="basis-[50%] flex-grow mt-5 p-2 px-6 rounded-xl font-bold transition-colors bg-stone-700 hover:bg-stone-900" type="submit" value="Login">
+            <input class="basis-[50%] flex-grow mt-5 p-2 px-6 rounded-xl font-bold transition-colors border-2 border-stone-700 hover:border-stone-900s hover:text-stone-500" type="submit" value="Register">
+        </div>
     </form>
 </div>
+<script>
+    console.log("xd mano no funcion")
+
+    document.querySelector("form").addEventListener("submit", e => {
+        e.preventDefault()
+    })
+
+    document.querySelector("input[type=submit]").addEventListener("click", e => {
+        console.log("hodsjflkds jf")
+    })
+</script>
